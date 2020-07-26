@@ -13,6 +13,7 @@ GraalVM's (https://github.com/graalvm/graalvm-ce-builds/releases/tag/vm-20.1.0) 
 
 The result is an exception:
 
+```
 Exception in thread "main" com.oracle.svm.core.jdk.UnsupportedFeatureError: Unsupported method of Unsafe
 	at com.oracle.svm.core.util.VMError.unsupportedFeature(VMError.java:86)
 	at jdk.internal.misc.Unsafe.staticFieldOffset(Unsafe.java:230)
@@ -20,3 +21,4 @@ Exception in thread "main" com.oracle.svm.core.jdk.UnsupportedFeatureError: Unsu
 	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:294)
 	at java.security.AccessController.doPrivileged(AccessController.java:83)
 	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:279)
+```
